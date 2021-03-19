@@ -1,0 +1,63 @@
+.GraphContainer {
+    margin: 1%;
+    padding: 1%;
+
+}
+
+.MainGraph {
+    width: 75%;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.crypto-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.dropdown2 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 25%;
+}
+
+
+
+.crypto-menu > .dropdown2 > .name {
+    /* background-color:aqua ; */
+    margin: 1%;
+    margin-top: 3.5%;
+    padding-right: 1%;
+    width: 60px;
+}
+
+@media only screen and (max-width:990px) {
+    .MainGraph {
+        width: 100%;
+    }
+
+    .GraphContainer {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 1%;
+    }
+
+    .crypto-menu {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .dropdown2 {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 2.5%;
+    }
+
+}
