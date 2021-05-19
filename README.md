@@ -17,14 +17,7 @@
 ### Technologies learnt by team members
 * Pankaj Khushalani
     <br> **spaCy** - Though NLTK is great for a beginner, it didn't provide us with necessary tools to support word vector embeddings and to build our own model. Hence, spaCy, an advanced NLP library was used. <br>
-    <style type="text/css">
-        .tg  {border-collapse:collapse;border-spacing:0;}
-        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        overflow:hidden;padding:10px 5px;word-break:normal;}
-        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-        .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-    </style>
+
     Being compatible with classes from _scikit-learn_, building models with spaCy becomes easy. Following were the ML algorithms used with TF-IDF vectorized data: <br>
     <br> <space><table class="tg">
         <thead>
