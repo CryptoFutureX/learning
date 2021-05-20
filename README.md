@@ -4,7 +4,7 @@
 * Tushar Bauskar
 
 **CNN model for sentiment analysis**
-As we were not able to use **BERT** model for sentiment analysis due to large data and less computational power,a CNN model was created.CNN can be used for sentiment analysis by creating vector embeddings of the text. The vectors were created using pretrained **GloVe twitter embedding 27B 100d** vector embeddings. It contains 27 billion words and their embeddings in 100 dimension vector.
+As we were not able to use **BERT** model for sentiment analysis due to large data and less computational power,a CNN model was created.CNN can be used for sentiment analysis by creating vector embeddings of the text. The vectors were created using pretrained **GloVe twitter embedding 27B 100d** vector embeddings. It contains 27 billion words and their embeddings in 100 dimension vectors.
 
 ![picture alt](https://peltarion.com/static/word_embedding_pa1.png "Embedding words to vectors")
 
