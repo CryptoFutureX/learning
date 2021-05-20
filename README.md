@@ -6,7 +6,7 @@
 - React ChartJs : Since ChartJs was mainly used for vanillaJs we needed a library which could configure and can be updated using React. This is where react-chart library was used
 - React ApexCharts : Later we decided to give more investor oriented look to our webapp and decided to implement Candle Plot & Line Plot in our webapp.This is where ApexCharts Library came in handy   
 - CryptoCompare : Onwards to the data fetching for the model training , prediction and plotting purpose. We used CryptoCompare lib which is python lib for fetching prices both latest as well as historical , coin listing across various exchanges and also trading using the api
-- 
+- Multivariate Time Series Modelling using LSTM : For price prediction we created Multivariate Time Series Modelling using LSTM in tensorflow keras. Adjusting through different parameters we got an accuary of around ~81% for Bitcoin Data.
 
 
 <!-- 
