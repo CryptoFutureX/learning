@@ -2,7 +2,10 @@
 
 ## Topics 
 - NLP 
-- Bert
+- Pytorch
+- Multivariate_Time_Series_Modelling_using_LSTM
+- ChartJs
+- CryptoCompare
 
 ## Libs 
 - [Pytorch](https://pytorch.org/)
