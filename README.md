@@ -23,6 +23,63 @@ The predictions are made by using the trends of prices of cryptocurrencies and c
 
 GitHub organization link: [CryptoFutureX](https://github.com/CryptoFutureX)
 
+## Installation
+
+* For the frontend, clone the repository
+```bash
+    git clone https://github.com/CryptoFutureX/frontend.git
+    cd frontend/client
+    npm install
+```
+Get your API key from [CoinLayer](https://coinlayer.com/#:~:text=The%20coinlayer%20API%20was%20built,as%20low%20as%2020%20milliseconds.). Create ```key.js ``` and add your API key 
+```bash
+    API_KEY = <your-API-key>
+```
+Then start the server on port 3000 by
+```bash
+    npm start
+```
+* For the backend, clone the repository.
+```bash
+    git clone https://github.com/CryptoFutureX/backend.git
+    cd backend
+```
+Create a virtual environment using venv (for Windows)
+```python
+     python3 -m venv <your-virtual-env-name>
+    .\env\Scripts\activate
+```
+Run the backend server on port 4000 by
+```bash
+    python3 manage.py runserver
+```
+Since the packages to install require several C++ dependencies and PyTorch along with TensorFlow are heavy libraries, an alternative is using Google Colab.    
+Open a Google Colaboratory notebook and mount your Google Drive.
+```python
+    from google.colab import drive
+    drive.mount('/content/drive/MyDrive')
+```
+Now, clone the repository in your Google Drive and install any dependencies which might not already be installed on Google Colab.
+```bash
+    !git clone https://github.com/CryptoFutureX/backend.git
+    %cd backend
+    !pip install -r requirements.txt
+```
+Now expose a port to Google Colab in order to run the Django app
+```python
+    from google.colab.output import eval_js
+    print(eval_js("google.colab.kernel.proxyPort(4000)"))
+```
+In ```settings.py```
+```python
+    ALLOWED_HOSTS = ['colab.research.google.com']
+```
+Finally, run the server on port 4000
+```bash
+    !python manage.py runserver 4000
+```
+
+
 ## Technology stack
 
 1. Django    
