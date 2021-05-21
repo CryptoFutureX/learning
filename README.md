@@ -17,36 +17,35 @@
 ### Technologies learnt by team members
 * Pankaj Khushalani
     <br> **spaCy** - Though NLTK is great for a beginner, it didn't provide us with necessary tools to support word vector embeddings and to build our own model. Hence, spaCy, an advanced NLP library was used. <br>
-
-    Being compatible with classes from _scikit-learn_, building models with spaCy becomes easy. Following were the ML algorithms used with TF-IDF vectorized data: <br>
-    <br> <space><table class="tg">
+    Being compatible with classes from _scikit-learn_, building models with spaCy becomes easy. Following were the ML algorithms used with TF-IDF vectorized data: 
+    <br> <space><table>
         <thead>
             <tr>
-                <th class="tg-c3ow">ML Algorithm</th>
-                <th class="tg-c3ow">Train acc.</th>
-                <th class="tg-c3ow">Test acc.</th>
+                <th>ML Algorithm</th>
+                <th>Train acc.</th>
+                <th>Test acc.</th>
             </tr>
         </thead>
     <tbody>
     <tr>
-        <td class="tg-c3ow">LinearSVC</td>
-        <td class="tg-c3ow">0.830495</td>
-        <td class="tg-c3ow">0.762606</td>
+        <td>LinearSVC</td>
+        <td>0.830495</td>
+        <td>0.762606</td>
     </tr>
     <tr>
-        <td class="tg-c3ow">SGDClassifier</td>
-        <td class="tg-c3ow">0.758569</td>
-        <td class="tg-c3ow">0.755504</td>
+        <td>SGDClassifier</td>
+        <td>0.758569</td>
+        <td>0.755504</td>
     </tr>
     <tr>
-        <td class="tg-c3ow">DecisionTree</td>
-        <td class="tg-c3ow">0.6212434</td>
-        <td class="tg-c3ow">0.6210907</td>
+        <td>DecisionTree</td>
+        <td>0.6212434</td>
+        <td>0.6210907</td>
     </tr>
     <tr>
-        <td class="tg-c3ow">MultinomialNB</td>
-        <td class="tg-c3ow">0.7971801</td>
-        <td class="tg-c3ow">0.7562758</td>
+        <td>MultinomialNB</td>
+        <td>0.7971801</td>
+        <td>0.7562758</td>
     </tr>
     </tbody>
     </table>
