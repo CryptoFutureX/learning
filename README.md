@@ -1,4 +1,10 @@
-# CryptoFutureX
+<div>
+  <h1>
+    <img src="https://drive.google.com/uc?export=view&id=1QRKYXj1G_iC_TNUmVjput7McLgBTt_hi" alt="CryptoFutureX logo" width="90" height="70">
+    </a>
+    CryptoFutureX
+  </h1>
+</div>
 
 ## Team members
 * Pankaj Khushalani
@@ -23,62 +29,70 @@ The predictions are made by using the trends of prices of cryptocurrencies and c
 
 GitHub organization link: [CryptoFutureX](https://github.com/CryptoFutureX)
 
+Google Drive folder: [Link](https://drive.google.com/drive/folders/1vCJcNvJHa9EqQ_NM9Q9JmyRm4i2oTG-t?usp=sharing)
+
 ## Installation
 
-* For the frontend, clone the repository
-```bash
-    git clone https://github.com/CryptoFutureX/frontend.git
-    cd frontend/client
-    npm install
-```
-Get your API key from [CoinLayer](https://coinlayer.com/#:~:text=The%20coinlayer%20API%20was%20built,as%20low%20as%2020%20milliseconds.). Create ```key.js ``` and add your API key 
-```bash
-    API_KEY = <your-API-key>
-```
-Then start the server on port 3000 by
-```bash
-    npm start
-```
-* For the backend, clone the repository.
-```bash
-    git clone https://github.com/CryptoFutureX/backend.git
-    cd backend
-```
-Create a virtual environment using venv (for Windows)
-```python
-     python3 -m venv <your-virtual-env-name>
-    .\env\Scripts\activate
-```
-Run the backend server on port 4000 by
-```bash
-    python3 manage.py runserver
-```
-Since the packages to install require several C++ dependencies and PyTorch along with TensorFlow are heavy libraries, an alternative is using Google Colab.    
-Open a Google Colaboratory notebook and mount your Google Drive.
-```python
-    from google.colab import drive
-    drive.mount('/content/drive/MyDrive')
-```
-Now, clone the repository in your Google Drive and install any dependencies which might not already be installed on Google Colab.
-```bash
-    !git clone https://github.com/CryptoFutureX/backend.git
-    %cd backend
-    !pip install -r requirements.txt
-```
-Now expose a port to Google Colab in order to run the Django app
-```python
-    from google.colab.output import eval_js
-    print(eval_js("google.colab.kernel.proxyPort(4000)"))
-```
-In ```settings.py```
-```python
-    ALLOWED_HOSTS = ['colab.research.google.com']
-```
-Finally, run the server on port 4000
-```bash
-    !python manage.py runserver 4000
-```
+* For the frontend,
+    - Clone the repository
+        ```bash
+        git clone https://github.com/CryptoFutureX/frontend.git
+        cd frontend/client
+        npm install
+        ```
+    - Get your API key from [CoinLayer](https://coinlayer.com/#:~:text=The%20coinlayer%20API%20was%20built,as%20low%20as%2020%20milliseconds.). Create ```key.js``` and add your API key
+         ```javascript
+        API_KEY = <your-API-key>
+        ```
 
+     - Then start the server on port 3000 by
+        ```bash
+        npm start
+        ```
+
+* For the backend, 
+    - Clone the repository
+        ```bash
+        git clone https://github.com/CryptoFutureX/backend.git
+        cd backend
+        ```
+    - Create a virtual environment using venv (for Windows)
+        ```bash
+        python3 -m venv <your-virtual-env-name>
+        .\env\Scripts\activate
+        ```
+    - Run the backend server on port 4000 by
+        ```bash
+        python3 manage.py runserver
+        ```
+ 
+    
+    >Since the packages to install require several C++ dependencies and PyTorch along with TensorFlow are heavy libraries, an alternative is using Google Colab.
+
+    - Open a Google Colaboratory notebook and mount your Google Drive.
+        ```python
+        from google.colab import drive
+        drive.mount('/content/drive/MyDrive')
+        ```
+    - Now, clone the repository in your Google Drive and install any dependencies which might not already be installed on Google Colab.
+        ```bash
+        !git clone https://github.com/CryptoFutureX/backend.git
+        %cd backend
+        !pip install -r requirements.txt
+        ```
+     - Now expose a port to Google Colab in order to run the Django app
+        ```python
+        from google.colab.output import eval_js
+        print(eval_js("google.colab.kernel.proxyPort(4000)"))
+        ```
+    - In ```settings.py```
+        ```python
+        ALLOWED_HOSTS = ['colab.research.google.com']
+        ```
+    - Finally, run the server on port 4000
+        ```bash
+        !python manage.py runserver 4000
+        ```
 
 ## Technology stack
 
@@ -123,6 +137,11 @@ References:
 <space>References: 
     * Learning PyTorch [here](https://www.youtube.com/watch?v=vo_fUOk-IKk&list=PLWKjhJtqVAbm3T2Eq1_KgloC7ogdXxdRa)
     * Hugging Face [documentation](https://huggingface.co/transformers/pretrained_models.html) for pretrained models
+
+3. TensorFlow    
+<space>It is a Python library used for machine learning. We used TensorFlow along with Keras API to do multivariate time series modelling using LSTM (an artificial recurrent neural network) for price prediction. <br>
+<space>References:
+    * LSTM [tutorial](https://www.youtube.com/watch?v=H6du_pfuznE)
 
 ### Technologies learnt by team members
 
@@ -224,8 +243,6 @@ Training accuracy | Validation accuracy |
     - React ChartJS: Since ChartJs was mainly used for vanillaJs we needed a library which could configure and can be updated using React. This is where react-chart library was used.
 
     - React ApexCharts: Later we decided to give more investor oriented look to our webapp and decided to implement Candle Plot & Line Plot in our webapp.This is where ApexCharts Library came in handy.
-
-    - Multivariate Time Series Modelling using LSTM: For price prediction we created Multivariate Time Series Modelling using LSTM in Tensorflow and Keras. Adjusting through different parameters we got an accuary of around ~81% for Bitcoin Data.
     <br><br>
 
 * Nikita Deokar
@@ -242,12 +259,12 @@ However, none of the above deep learning transformer models could be trained wit
 ## Future Scope
 
 * Automating the data collection and prediction pipeline on the backend.
-
 * Improving the accuracy of the current model and exploring other NLP techniques to get better predictions.
-
 * Adding live indicator of cryptocurrency prices along with the candlebar graph.
-
 * Deployment of the data collection script to AWS Lambda and price prediction model to AWS SageMaker.
 
 ## Screenshots
 
+![Frontend chart](https://drive.google.com/uc?export=view&id=1BatbWAlAM_YWOW8h1L7aGIuLmohXISBL)
+
+![Frontend price change by sentiment](https://drive.google.com/uc?export=view&id=1eSv2hOyChO9syV-e279FsEajviKW_tod)
